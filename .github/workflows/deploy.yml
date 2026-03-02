@@ -13,9 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Install Dependencies
-        run: npm install
-        
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
